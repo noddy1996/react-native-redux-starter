@@ -12,7 +12,7 @@ export default function Home() {
     const hasError=(error)=>{
         dispatch(setError({error}))//here we can call a action to set an error in reducer.
     }
-    console.log("error is",isError);
+    console.log("error is =>",isError);
     useEffect(() => {
         setIsError(error)
     }, [error])
