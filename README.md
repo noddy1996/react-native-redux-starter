@@ -50,7 +50,7 @@ $ cd ios && pod install
 
 **Method One**
 
-*	Open the project in Xcode from **ios/ReactNativeStarter.xcodeproj**.
+*	Open the project in Xcode from **ios/react_native_redux_starter.xcodeproj**.
 
 *	Hit the play button.
 
