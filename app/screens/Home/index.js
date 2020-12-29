@@ -4,6 +4,7 @@ import { useSelector,useDispatch } from 'react-redux';
 import { setError } from '../../redux/actions';
 import {  } from 'react-native-gesture-handler';
 import { features, starterIntro } from '../../utils/MockData';
+import { AlertHelper } from '../../utils/AlertHelper';
 
 export default function Home() {
     const [isError, setIsError] = useState({})
