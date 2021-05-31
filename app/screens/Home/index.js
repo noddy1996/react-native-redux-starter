@@ -5,9 +5,16 @@ import { setError } from '../../redux/actions';
 import {  } from 'react-native-gesture-handler';
 import { features, starterIntro } from '../../utils/MockData';
 import { AlertHelper } from '../../utils/AlertHelper';
+import { appColors } from '../../utils/appColors';
+import CustomInput from '../../components/CustomInput';
+import Label from '../../components/Label';
+import CustomButton from '../../components/CustomButton';
+import AvatarImage from '../../components/AvatarImage';
+import Divider from '../../components/Divider';
 
 export default function Home() {
     const [isError, setIsError] = useState({})
+    const [text, setText] = useState("hello")
     let error = useSelector(state => state.error)// getting from reducer.
     const dispatch = useDispatch()
     const hasError=(error)=>{
@@ -20,23 +27,26 @@ export default function Home() {
     return (
         <View style={styles.container}>
         <View style={styles.header}>
-            <Text style={styles.headerText}>
-              Welcome to  React native starter kit with redux
-            </Text>
+            <Label style={styles.headerText}
+            text={"Welcome to  React native starter kit with redux"}/>
         </View>
         <ScrollView style={styles.scrollContainer}>
-            <Text style={styles.TitleText}>What is React Native Starter?</Text>
+          
+          <Label text={"What is React Native Starter?"} style={styles.TitleText}/>
             {starterIntro.map((val,key)=>{
                  return(
-                    <Text key={key} style={{fontSize:16,lineHeight:25,marginBottom:30 }}>{val}</Text>
+                    <Label key={key} style={{fontSize:16,lineHeight:25,marginBottom:30 }} text={val}/>
                  )
              })}
-            <Text style={styles.TitleText}>What's inside</Text>
+            <Label style={styles.TitleText} text={"What's inside"}/>
              {features.map((val,key)=>{
                  return(
-                    <Text key={key} style={{fontSize:18,lineHeight:36,fontWeight:"500" }}>• {val}</Text>
+                    <Label key={key} text={`• ${val}`} style={{fontSize:18,lineHeight:36,fontWeight:"500" }}/>
                  )
              })}
+             <Divider isDark/>
+             <CustomInput placeholder={"enter text"} onChangeText={val=>setText(val)}/>
+          <CustomButton label={"Button"} onPress={()=>alert(text)}/>
         </ScrollView>
         
       </View>
@@ -49,7 +59,7 @@ const styles = StyleSheet.create({
       backgroundColor: 'white',
     },
     header: {
-      backgroundColor: '#d64b4b',
+      backgroundColor: appColors.primary,
       alignItems: 'center',
       borderBottomWidth: 12,
       borderBottomColor: '#ddd',
