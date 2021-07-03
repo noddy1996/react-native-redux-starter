@@ -17,12 +17,14 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 - [Redux-persist](https://github.com/rt2zz/redux-persist) `6.0.0` Persist and rehydrate a redux store. Javascript apps
 - [Alert](https://github.com/testshallpass/react-native-dropdownalert) `4.3.0` An alert to notify users 
 - [Babel](http://babeljs.io/) `7.2.3` for ES6+ support
+- [Bottom-Tabs](https://github.com/react-navigation/react-navigation) `5.11.11` for Bottom Navigations 
 - [Navigation for React Native](https://reactnavigation.org/) a router based on new React Native Navigation API
 
 ## Libraries
  - [@react-native-community/masked-view](https://github.com/react-native-community/react-native-masked-view) `0.1.10`
  - [@react-navigation/native](https://github.com/react-navigation/react-navigation) `5.7.3`
  - [@react-navigation/stack](https://github.com/react-navigation/react-navigation) `5.9.0`
+ - [Bottom-Tabs](https://github.com/react-navigation/react-navigation) `5.11.11` 
  - [react-native-gesture-handler](https://github.com/software-mansion/react-native-gesture-handler) `1.7.0`
  - [react-native-reanimated](https://github.com/software-mansion/react-native-reanimated) `1.13.0`
  - [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context) `3.1.7`
@@ -77,7 +79,10 @@ $ react-native run-ios
 ```sh
 $ react-native run-android
 ```
+#### 4. How to Decide the Navigation
 
+*	Navigation is decided By  **navigationTypeTabs** Key definend in [app.json](./app.json).
+*	**navigationTypeTabs** :  true, will give you the bottom Tabs and vice versa.
 ## Debugger
 - [React Native Debugger](https://github.com/jhen0409/react-native-debugger) : The standalone app based on official debugger of React Native, and includes React Inspector / Redux DevTools
 - [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension) `2.13.5`
