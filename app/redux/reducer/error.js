@@ -10,6 +10,6 @@ export default function (state = initialState, action) {
                 hasError: { ...action.payload },
             }
         default:
-            return { ...state }
+            return  state   //must be like this so it can  presist the reducers
     }
 }

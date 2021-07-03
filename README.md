@@ -14,6 +14,8 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 - [React JS](https://reactjs.org/) is a JavaScript library
 - [React Native](https://facebook.github.io/react-native/) `0.63.2` for building native apps using react
 - [Redux](https://redux.js.org) `4.0.5` a predictable state container for Javascript apps
+- [Redux-persist](https://github.com/rt2zz/redux-persist) `6.0.0` Persist and rehydrate a redux store. Javascript apps
+- [Babel](https://github.com/testshallpass/react-native-dropdownalert) `4.3.0` An alert to notify users 
 - [Babel](http://babeljs.io/) `7.2.3` for ES6+ support
 - [Navigation for React Native](https://reactnavigation.org/) a router based on new React Native Navigation API
 
