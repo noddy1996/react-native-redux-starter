@@ -15,8 +15,8 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 - [React Native](https://facebook.github.io/react-native/) `0.63.2` for building native apps using react
 - [Redux](https://redux.js.org) `4.0.5` a predictable state container for Javascript apps
 - [Redux-persist](https://github.com/rt2zz/redux-persist) `6.0.0` Persist and rehydrate a redux store. Javascript apps
-- [Babel](https://github.com/testshallpass/react-native-dropdownalert) `4.3.0` An alert to notify users 
-- [Alert](http://babeljs.io/) `7.2.3` for ES6+ support
+- [Alert](https://github.com/testshallpass/react-native-dropdownalert) `4.3.0` An alert to notify users 
+- [Babel](http://babeljs.io/) `7.2.3` for ES6+ support
 - [Navigation for React Native](https://reactnavigation.org/) a router based on new React Native Navigation API
 
 ## Libraries
@@ -30,7 +30,10 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
  - [react-redux](https://react-redux.js.org/) `7.2.1`
  - [redux](https://redux.js.org/) `4.0.5`
  - [redux-saga](https://redux-saga.js.org/) `1.1.3`
-
+ - [Alert](https://github.com/testshallpass/react-native-dropdownalert) `4.3.0` 
+ - [Redux-persist](https://github.com/rt2zz/redux-persist) `6.0.0`
+ - [Touch-ripple](https://github.com/noddy1996/react-native-touch-ripple) `0.0.0`
+ 
 ## Get Started
 
 
