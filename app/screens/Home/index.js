@@ -9,9 +9,10 @@ import { appColors } from '../../utils/appColors';
 import CustomInput from '../../components/CustomInput';
 import Label from '../../components/Label';
 import CustomButton from '../../components/CustomButton';
-import AvatarImage from '../../components/AvatarImage';
+import FontAwesome from 'react-native-vector-icons/dist/FontAwesome'; 
 import Divider from '../../components/Divider';
 import Modal from 'Components/Modal';
+import { scale } from 'react-native-size-matters';
 export default function Home() {
     const [isError, setIsError] = useState({})
     const [text, setText] = useState("hello")
@@ -48,9 +49,14 @@ export default function Home() {
              <Divider isDark/>
              <CustomInput placeholder={"enter text"} onChangeText={val=>setText(val)}/>
              <Modal modalProps={ {isVisible:isVisible} } toggleModal={()=> setIsVisible(!isVisible)} >
-               <CustomInput placeholder={"enter text"} onChangeText={val=>setText(val)}/>
+                <Label text={"Swap me down to close"} />
              </Modal >
-          <CustomButton  label={"Button"} onPress={()=> setIsVisible(!isVisible)}/>
+             <View style={{flexDirection:'row', justifyContent:'space-evenly', alignItems:'center', paddingHorizontal:scale(20)}}>
+                <FontAwesome name="user" size={scale(30)} color={appColors.primary} />
+                <Label text={"Icon Demo"} />
+             </View>
+          <CustomButton  label={"Show Modal"} onPress={()=> setIsVisible(!isVisible)}/>
+          
         </ScrollView>
         
       </View>
