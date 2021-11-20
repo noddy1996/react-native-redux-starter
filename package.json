@@ -2,6 +2,7 @@
   "name": "react_native_redux_starter",
   "version": "0.0.1",
   "private": true,
+  "author": "NoddyCode <shammi.rathore66@gmail.com>", 
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
