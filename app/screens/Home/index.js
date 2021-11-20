@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import { StyleSheet, Text, View,ScrollView } from 'react-native'
+import { StyleSheet, Text, View,ScrollView,  } from 'react-native'
 import { useSelector,useDispatch } from 'react-redux';
 import { setError } from '../../redux/actions';
 import {  } from 'react-native-gesture-handler';
@@ -11,16 +11,17 @@ import Label from '../../components/Label';
 import CustomButton from '../../components/CustomButton';
 import AvatarImage from '../../components/AvatarImage';
 import Divider from '../../components/Divider';
-
+import Modal from 'Components/Modal';
 export default function Home() {
     const [isError, setIsError] = useState({})
     const [text, setText] = useState("hello")
+    const [isVisible, setIsVisible] = useState(false)
     let error = useSelector(state => state.error)// getting from reducer.
     const dispatch = useDispatch()
     const hasError=(error)=>{
         dispatch(setError({error}))//here we can call a action to set an error in reducer.
     }
-    console.log("error is =>",isError);
+    //console.log("error is =>",{isVisible});
     useEffect(() => {
         setIsError(error)
     }, [error])
@@ -28,7 +29,7 @@ export default function Home() {
         <View style={styles.container}>
         <View style={styles.header}>
             <Label style={styles.headerText}
-            text={"Welcome to  React native starter kit with redux"}/>
+            text={"React native starter kit with redux By `Amusoftech`"}/>
         </View>
         <ScrollView style={styles.scrollContainer}>
           
@@ -46,7 +47,10 @@ export default function Home() {
              })}
              <Divider isDark/>
              <CustomInput placeholder={"enter text"} onChangeText={val=>setText(val)}/>
-          <CustomButton label={"Button"} onPress={()=>alert(text)}/>
+             <Modal modalProps={ {isVisible:isVisible} } toggleModal={()=> setIsVisible(!isVisible)} >
+               <CustomInput placeholder={"enter text"} onChangeText={val=>setText(val)}/>
+             </Modal >
+          <CustomButton  label={"Button"} onPress={()=> setIsVisible(!isVisible)}/>
         </ScrollView>
         
       </View>
