@@ -12,7 +12,21 @@ A starter boilerplate for a mobile app using React Native and Redux.
 - [Android Marshmallow](https://www.android.com/versions/marshmallow-6-0/) or newer on your Android device to test properly
 
 See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
-
+## Features
+- Navigation (Tab and Stack)
+- On Boarding
+- Custom Fonts 
+- Vector Icons
+- Custom Input
+- Custom Label
+- Swipable Modal 
+- Re-Animation
+- Avatar
+- Redux
+- Redux-Saga
+- Redux Presist (Offline first)
+- Gloabl Alert (DropdownAlert)
+- Layout Container
 ## Stack
 
 - [React JS](https://reactjs.org/) is a JavaScript library

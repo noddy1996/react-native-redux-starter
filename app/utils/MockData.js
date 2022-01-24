@@ -4,7 +4,9 @@ export const features = [
     "Redux for state management",
     "React Navigation for simple navigation",
     "Dropdown Alert Helper for showing success/error/info message",
-    "Basic custom components like Text input,Label and picker select etc"
+    'Vector icons',
+    "On Boarding screens",
+    "Basic custom components like Text input,Label,Modal and picker select etc"
 ]
 export const starterIntro=[
     "We love building apps with React Native, because it helps us create high quality products for both major mobile platforms quickly and cost-effectively.",
