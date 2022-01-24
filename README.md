@@ -1,4 +1,4 @@
-# react-native-redux-starter
+# [react-native-redux-starter](https://amusoftech.xyz/)
 
 A starter boilerplate for a mobile app using React Native and Redux.
 
@@ -12,7 +12,7 @@ A starter boilerplate for a mobile app using React Native and Redux.
 - [Android Marshmallow](https://www.android.com/versions/marshmallow-6-0/) or newer on your Android device to test properly
 
 See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
-## Features
+## Features 🔥
 - Navigation (Tab and Stack)
 - On Boarding
 - Custom Fonts 
