@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux'; 
  
 
@@ -19,5 +19,10 @@ export const ReduxWrapper = (WrappedComponent) => {
   return hocComponent;
 };
 
+/**
+ * @description HOC component to connect redux to any Valid JSX component
+ * @param {Component}
+ * @returns {Component}
+ */
 export default (WrapperComponent) =>
   connect(mapStateToProps, mapDispatchToProps)(ReduxWrapper(WrapperComponent));

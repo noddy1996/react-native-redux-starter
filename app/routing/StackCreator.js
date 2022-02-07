@@ -4,6 +4,13 @@ import {createStackNavigator,CardStyleInterpolators, HeaderStyleInterpolators, T
 
 const Stack = createStackNavigator();
 
+/**
+ * 
+ * @param {routs,screenOptions} routesArray,screenOptions
+ * @returns {Stack.Navigator}
+ * @description Stack Route Creator, it takes an array of routes and generate the routes for given array
+ * @author <Er.amudeep@gmail.com>
+ */
 export default function StackCreater(props) {
     const{routs, screenOptions } =props 
   return (

@@ -12,7 +12,7 @@ import CustomButton from '../../components/CustomButton';
 import FontAwesome from 'react-native-vector-icons/dist/FontAwesome'; 
 import Divider from '../../components/Divider';
 import Modal from 'Components/Modal';
-import { scale } from 'react-native-size-matters';
+import { scale } from 'react-native-size-matters'; 
 export default function Home() {
     const [isError, setIsError] = useState({})
     const [text, setText] = useState("hello")
