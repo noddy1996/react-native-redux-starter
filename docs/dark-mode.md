@@ -11,7 +11,7 @@ Following are the comonents.
 Dark mode is tottal powered by Redux. `its under appState Reducer`
 Each and every components implments the Redux, with the help of `ReduxWrapper` Component, and extract the `darkMode` from `appSate` 
 Reducer. 
-
+`Note: For the Better exp please Wrap your Screen with Container Component, Because on Dark mode it enables the background color to black 70%`
 
 ## How to toggle `Dark` mode .?
 You have to implment the Redux with `ReduxWrapper` Component, and destruct the method `toggleDarkMode$` and call the function
