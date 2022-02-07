@@ -3,11 +3,12 @@ import { StyleSheet, Text, View } from 'react-native'
 import { scale } from 'react-native-size-matters'
 import { appColors } from '../../utils/appColors'
 import TouchableRipple from 'react-native-touch-ripple'
+import Label from '../Label'
 
 export default function index({label,style,onPress,labelStyle}) {
     return (
-        <TouchableRipple rippleColor={appColors.white} onPress={onPress} rippleDuration={800} style={[styles.container,style]}>
-            <Text style={[styles.label,labelStyle]}>{`${label}`.toUpperCase()}</Text>
+        <TouchableRipple rippleColor={appColors.white} onPress={onPress} rippleDuration={800} style={[styles.container,style]}> 
+            <Label text={`${label}`.toUpperCase()} style={[styles.label,labelStyle]}/>
         </TouchableRipple>
     )
 }

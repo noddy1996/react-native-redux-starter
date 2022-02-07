@@ -13,7 +13,10 @@ import FontAwesome from 'react-native-vector-icons/dist/FontAwesome';
 import Divider from '../../components/Divider';
 import Modal from 'Components/Modal';
 import { scale } from 'react-native-size-matters'; 
-export default function Home() {
+import ReduxWrapper from '../../redux/ReduxWrapper';
+import Container from '../../components/Container';
+
+function Home({toggleDarkMode$}) {
     const [isError, setIsError] = useState({})
     const [text, setText] = useState("hello")
     const [isVisible, setIsVisible] = useState(false)
@@ -32,8 +35,8 @@ export default function Home() {
             <Label style={styles.headerText}
             text={"React native starter kit with redux By `Amusoftech`"}/>
         </View>
-        <ScrollView style={styles.scrollContainer}>
-          
+        <Container style={styles.scrollContainer} isScrollable>
+        <CustomButton  label={"Enable Dark Mode"} onPress={()=> toggleDarkMode$()}/>
           <Label text={"What is React Native Starter?"} style={styles.TitleText}/>
             {starterIntro.map((val,key)=>{
                  return(
@@ -56,13 +59,17 @@ export default function Home() {
                 <Label text={"Icon Demo"} />
              </View>
           <CustomButton  label={"Show Modal"} onPress={()=> setIsVisible(!isVisible)}/>
+
+           
           
-        </ScrollView>
+        </Container>
         
       </View>
     )
 }
 
+
+export default ReduxWrapper(Home)
 const styles = StyleSheet.create({
     container: {
       flex: 1,

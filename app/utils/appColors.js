@@ -2,7 +2,8 @@ export const appColors={
     primary:'#FE497B',
     secondary:"#fff",
     white:"#fff",
-    black:"#000"
+    //black:"#000"
+    black:"rgba(0,0,0,0.79)"
 }
 export const shadow = {
     shadowColor: "#000",
