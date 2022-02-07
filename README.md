@@ -27,6 +27,7 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 - Redux Presist (Offline first)
 - Gloabl Alert (DropdownAlert)
 - Layout Container
+- Dot Env
 ## Stack
 
 - [React JS](https://reactjs.org/) is a JavaScript library
