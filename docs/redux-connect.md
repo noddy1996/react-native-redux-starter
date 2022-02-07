@@ -8,7 +8,7 @@ We made connecting redux easy for you, there are very simple steps to connect yo
 
 *Example*
 
-`function MyComponent(props) {
+``` function MyComponent(props) {
     const {appState} =props 
     // props variable containes the redux store info along your other props
  
@@ -19,4 +19,4 @@ We made connecting redux easy for you, there are very simple steps to connect yo
     )
     
 }
-export default ReduxWrapper(MyComponent)`
+export default ReduxWrapper(MyComponent) ```
