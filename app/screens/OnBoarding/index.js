@@ -6,6 +6,7 @@ import Label from '../../components/Label';
 import * as Animatable from 'react-native-animatable';
 import {appColors} from '../../utils/appColors';
 import {API_URL, API_TOKEN} from "@env" // Example for ENV 
+import Container from 'Components/Container';
 
 export default function index({navigation}) {
   console.log({API_URL, API_TOKEN});
@@ -62,6 +63,7 @@ export default function index({navigation}) {
     navigation?.navigate("Home")
   };
   return (
+    <Container>
     <AppIntroSlider
       dotStyle={styles.buttonCircle}
       activeDotStyle={styles.activeButton}
@@ -74,6 +76,7 @@ export default function index({navigation}) {
       renderDoneButton={() => <Label text={'Done'} style={styles.btn} />}
       // skipLabel={"Slip"}
     />
+    </Container>
   );
 }
 
