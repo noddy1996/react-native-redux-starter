@@ -3,7 +3,7 @@ import {View, StyleSheet} from 'react-native';
 import Modal from 'react-native-modal';
 import {scale} from 'react-native-size-matters';
 import {appColors} from '../../utils/appColors';
-
+ 
 export default function index({
   modalProps,
   toggleModal,

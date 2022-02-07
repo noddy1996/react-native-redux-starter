@@ -2,6 +2,7 @@ import * as React from 'react';
 import color from 'color';
 import { StyleSheet, View, } from 'react-native';
 import { appColors } from '../utils/appColors';
+import ReduxWrapper from '../redux/ReduxWrapper';
 
 
 
@@ -32,12 +33,12 @@ import { appColors } from '../utils/appColors';
  * export default MyComponent;
  * ```
  */
-const Divider = ({ inset, style, isDark,...rest }) => {
+const Divider = ({ inset, style,   appState:{darkMode},...rest }) => {
   return (
     <View
       {...rest}
       style={[
-        isDark ? styles.dark : styles.light,
+        darkMode ? styles.dark : styles.light,
         inset && styles.inset,
         style,
       ]}
@@ -59,4 +60,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Divider
+export default ReduxWrapper( Divider)
