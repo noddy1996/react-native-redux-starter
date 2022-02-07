@@ -5,7 +5,10 @@ import {scale} from 'react-native-size-matters';
 import Label from '../../components/Label';
 import * as Animatable from 'react-native-animatable';
 import {appColors} from '../../utils/appColors';
+import {API_URL, API_TOKEN} from "@env" // Example for ENV 
+
 export default function index({navigation}) {
+  console.log({API_URL, API_TOKEN});
   const slides = [
     {
       key: 'two',

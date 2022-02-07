@@ -14,7 +14,7 @@ module.exports = {
                  "Utils": "./app/utils"    
             }
         },
-        "@babel/plugin-syntax-dynamic-import"
+        "@babel/plugin-syntax-dynamic-import" 
     ]
 ],
 };
