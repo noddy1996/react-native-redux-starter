@@ -1,7 +1,7 @@
 # [react-native-redux-starter](https://amusoftech.xyz/)
 
 A starter boilerplate for a mobile app using React Native and Redux.
-
+####  Dark Mode Enabled
 ## Requirements
 
 - [Node](https://nodejs.org) `6.x` or newer
