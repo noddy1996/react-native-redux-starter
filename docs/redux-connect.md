@@ -22,4 +22,5 @@ function MyComponent(props) {
     )
     
 }
-export default ReduxWrapper(MyComponent) ```
+export default ReduxWrapper(MyComponent) 
+```

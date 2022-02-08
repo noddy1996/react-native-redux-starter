@@ -18,7 +18,8 @@ Reducer.
 You have to implment the Redux with `ReduxWrapper` Component, and destruct the method `toggleDarkMode$` and call the function
 it will toggle your `darkMode` State.
 *Example*
-``` function MyComponent({toggleDarkMode$}) {
+``` 
+function MyComponent({toggleDarkMode$}) {
 
 const someFunction = ()=>{
     toggleDarkMode$()
@@ -30,7 +31,8 @@ const someFunction = ()=>{
     )
     
 }
-export default ReduxWrapper(MyComponent) ```
+export default ReduxWrapper(MyComponent)
+```
 
 
 
