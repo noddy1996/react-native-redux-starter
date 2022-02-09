@@ -1,5 +1,5 @@
 # [react-native-redux-starter](https://amusoftech.xyz/)
-
+# [Docs are here](./docs/)
 A starter boilerplate for a mobile app using React Native and Redux.
 ####  Dark Mode Enabled 🔆
 ## Requirements
